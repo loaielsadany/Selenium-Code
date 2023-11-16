@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+
+<suite name="loai tests"  verbose="5" preserve-order= "true" >
+<!--    <parameter name="browserType" value="Chrome" />-->
+<!--    <parameter name="url" value="http://10.95.0.178/be-login/auth/login" />-->
+<parameter name="browser" value="chrome"></parameter>
+    <test name="test loai" preserve-order= "true" >
+
+        <!--		<groups>-->
+        <!--			<run>-->
+        <!--				<include name="group1"></include>-->
+        <!--			</run>-->
+        <!--		</groups>-->
+
+
+        <classes>
+
+
+
+<!--            <class name="Test.RegistrationTest" />-->
+<!--            <class name="Test.MyAccountTest" />-->
+<!--            <class name="Test.SearchTest" />-->
+<!--            <class name="Test.SearchAutoCompleteTest" />-->
+<!--            <class name="Test.ContactUsTest" />-->
+<!--            <class name="Test.EmailProductToFriendTest" />-->
+<!--            <class name="Test.ChangeCurrencyTest" />-->
+<!--            <class name="Test.ReviewProductTest" />-->
+<!--            <class name="Test.HoverTest" />-->
+<!--            <class name="Test.WishListTest" />-->
+<!--            <class name="Test.CompareTest" />-->
+<!--            <class name="Test.AddToCartTest" />-->
+<!--            <class name="Test.CheckOutUsingRegisteredUserTest" />-->
+<!--            <class name="Test.CheckOutUsingUnregisteredUserTest" />-->
+<!--            <class name="Test.RegistrationTestUsingDDTAndDataProvider" />-->
+<!--            <class name="Test.RegistrationUsingDDTAndPropertiesTest" />-->
+<!--            <class name="Test.RegistrationTestUsingDDTAndExcelTest" />-->
+<!--            <class name="Test.RegistrationWithDDTAndCSVTest" />-->
+<!--            <class name="Test.RegistrationUsingDDTAndJson" />-->
+<!--            <class name="Test.RegistrationWithDDTAndFakeDataTest" />-->
+            <class name="Runner.TestRunner" />
+
+
+
+
+
+
+        </classes>
+    </test>
+
+
+</suite>

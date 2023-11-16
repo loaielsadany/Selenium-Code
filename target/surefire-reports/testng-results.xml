@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-11-06T14:21:35 AST" name="loai tests" finished-at="2023-11-06T14:21:42 AST" duration-ms="6263">
+    <groups>
+    </groups>
+    <test started-at="2023-11-06T14:21:35 AST" name="test loai" finished-at="2023-11-06T14:21:42 AST" duration-ms="6263">
+      <class name="Test.RegistrationTest">
+        <test-method is-config="true" signature="startDriver(java.lang.String)[pri:0, instance:Test.RegistrationTest@f5ac9e4]" started-at="2023-11-06T14:21:23 AST" name="startDriver" finished-at="2023-11-06T14:21:35 AST" duration-ms="12289" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method signature="checkRegistrationSuccessfully()[pri:1, instance:Test.RegistrationTest@f5ac9e4]" started-at="2023-11-06T14:21:35 AST" name="checkRegistrationSuccessfully" finished-at="2023-11-06T14:21:37 AST" duration-ms="1721" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkRegistrationSuccessfully -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:Test.RegistrationTest@f5ac9e4]" started-at="2023-11-06T14:21:37 AST" name="takeScreenshotOnFailure" finished-at="2023-11-06T14:21:37 AST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkRegistrationSuccessfully status=SUCCESS method=RegistrationTest.checkRegistrationSuccessfully()[pri:1, instance:Test.RegistrationTest@f5ac9e4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotOnFailure -->
+        <test-method signature="checkLoginByRegisteredUser()[pri:0, instance:Test.RegistrationTest@f5ac9e4]" started-at="2023-11-06T14:21:37 AST" name="checkLoginByRegisteredUser" finished-at="2023-11-06T14:21:41 AST" depends-on-methods="Test.RegistrationTest.checkRegistrationSuccessfully" duration-ms="3639" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkLoginByRegisteredUser -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:Test.RegistrationTest@f5ac9e4]" started-at="2023-11-06T14:21:41 AST" name="takeScreenshotOnFailure" finished-at="2023-11-06T14:21:41 AST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkLoginByRegisteredUser status=SUCCESS method=RegistrationTest.checkLoginByRegisteredUser()[pri:0, instance:Test.RegistrationTest@f5ac9e4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotOnFailure -->
+        <test-method signature="checkLogoutByRegisteredUserAfterChangePassword()[pri:0, instance:Test.RegistrationTest@f5ac9e4]" started-at="2023-11-06T14:21:41 AST" name="checkLogoutByRegisteredUserAfterChangePassword" finished-at="2023-11-06T14:21:42 AST" depends-on-methods="Test.RegistrationTest.checkLoginByRegisteredUser" duration-ms="855" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkLogoutByRegisteredUserAfterChangePassword -->
+        <test-method is-config="true" signature="takeScreenshotOnFailure(org.testng.ITestResult)[pri:0, instance:Test.RegistrationTest@f5ac9e4]" started-at="2023-11-06T14:21:42 AST" name="takeScreenshotOnFailure" finished-at="2023-11-06T14:21:42 AST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkLogoutByRegisteredUserAfterChangePassword status=SUCCESS method=RegistrationTest.checkLogoutByRegisteredUserAfterChangePassword()[pri:0, instance:Test.RegistrationTest@f5ac9e4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotOnFailure -->
+      </class> <!-- Test.RegistrationTest -->
+    </test> <!-- test loai -->
+  </suite> <!-- loai tests -->
+</testng-results>
