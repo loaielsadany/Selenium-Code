@@ -5,7 +5,7 @@
 <suite name="loai tests"  verbose="5" preserve-order= "true" >
 <!--    <parameter name="browserType" value="Chrome" />-->
 <!--    <parameter name="url" value="http://10.95.0.178/be-login/auth/login" />-->
-<parameter name="browser" value="headless"></parameter>
+<parameter name="browser" value="chrome-headless"></parameter>
     <test name="test loai" preserve-order= "true" >
 
         <!--		<groups>-->
