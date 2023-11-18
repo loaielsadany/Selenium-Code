@@ -8,6 +8,9 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.phantomjs.PhantomJSDriver;
+import org.openqa.selenium.phantomjs.PhantomJSDriverService;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
 
@@ -41,21 +44,33 @@ public class TestBase extends AbstractTestNGCucumberTests {
     @BeforeSuite
     @Parameters("browser")
 
-    public void startDriver(String browserName){
-        if (browserName.equalsIgnoreCase("chrome"))
-        {driver=new ChromeDriver(chromeOptions());}
+    public void startDriver(String browserName) {
+        if (browserName.equalsIgnoreCase("chrome")) {
+            driver = new ChromeDriver(chromeOptions());
+        }
 
-        if (browserName.equalsIgnoreCase("firefox"))
-        {driver=new FirefoxDriver(firefoxOptions());}
+        if (browserName.equalsIgnoreCase("firefox")) {
+            driver = new FirefoxDriver(firefoxOptions());
+        }
 
-        if (browserName.equalsIgnoreCase("ie"))
-        {driver=new InternetExplorerDriver();}
+        if (browserName.equalsIgnoreCase("ie")) {
+            driver = new InternetExplorerDriver();
+        }
+        if(browserName.equalsIgnoreCase("headless")) {
 
+
+            DesiredCapabilities caps=new DesiredCapabilities();
+            caps.setCapability(PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY,"D:\\MY LIFE-2024\\SW TEST\\Driver\\phantomjs-2.1.1-windows\\bin\\phantomjs.exe");
+            String[]phantomArgs={"--web-security=no","--ignore-ssl-errors=yes"};
+            caps.setCapability(PhantomJSDriverService.PHANTOMJS_CLI_ARGS,phantomArgs);
+            driver=new PhantomJSDriver(caps);
+
+        }
         driver.get("https://demo.nopcommerce.com/register?returnUrl=%2F");
         driver.manage().window().maximize();
-
-
     }
+
+
 
 
 //    @AfterSuite

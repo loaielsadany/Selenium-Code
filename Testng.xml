@@ -5,7 +5,7 @@
 <suite name="loai tests"  verbose="5" preserve-order= "true" >
 <!--    <parameter name="browserType" value="Chrome" />-->
 <!--    <parameter name="url" value="http://10.95.0.178/be-login/auth/login" />-->
-<parameter name="browser" value="chrome"></parameter>
+<parameter name="browser" value="headless"></parameter>
     <test name="test loai" preserve-order= "true" >
 
         <!--		<groups>-->
@@ -19,7 +19,7 @@
 
 
 
-<!--            <class name="Test.RegistrationTest" />-->
+            <class name="Test.RegistrationTest" />
 <!--            <class name="Test.MyAccountTest" />-->
 <!--            <class name="Test.SearchTest" />-->
 <!--            <class name="Test.SearchAutoCompleteTest" />-->
@@ -39,7 +39,7 @@
 <!--            <class name="Test.RegistrationWithDDTAndCSVTest" />-->
 <!--            <class name="Test.RegistrationUsingDDTAndJson" />-->
 <!--            <class name="Test.RegistrationWithDDTAndFakeDataTest" />-->
-            <class name="Runner.TestRunner" />
+<!--            <class name="Runner.TestRunner" />-->
 
 
 
