@@ -8,8 +8,6 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.openqa.selenium.phantomjs.PhantomJSDriver;
-import org.openqa.selenium.phantomjs.PhantomJSDriverService;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
@@ -56,15 +54,7 @@ public class TestBase extends AbstractTestNGCucumberTests {
         else if (browserName.equalsIgnoreCase("ie")) {
             driver = new InternetExplorerDriver();
         }
-        else if(browserName.equalsIgnoreCase("headless")) {
 
-
-            DesiredCapabilities caps=new DesiredCapabilities();
-            caps.setCapability(PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY,"D:\\MY LIFE-2024\\SW TEST\\Driver\\phantomjs-2.1.1-windows\\bin\\phantomjs.exe");
-            String[]phantomArgs={"--web-security=no","--ignore-ssl-errors=yes"};
-            caps.setCapability(PhantomJSDriverService.PHANTOMJS_CLI_ARGS,phantomArgs);
-            driver=new PhantomJSDriver(caps);
-        }
         else if(browserName.equalsIgnoreCase("chrome-headless")){
 
             ChromeOptions options=new ChromeOptions();
