@@ -38,8 +38,8 @@
 <!--            <class name="Test.RegistrationTestUsingDDTAndExcelTest" />-->
 <!--            <class name="Test.RegistrationWithDDTAndCSVTest" />-->
 <!--            <class name="Test.RegistrationUsingDDTAndJson" />-->
-<!--            <class name="Test.RegistrationWithDDTAndFakeDataTest" />-->
-            <class name="Runner.TestRunner" />
+            <class name="Test.RegistrationWithDDTAndFakeDataTest" />
+<!--            <class name="Runner.TestRunner" />-->
 
 
 
