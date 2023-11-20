@@ -67,10 +67,10 @@ public class TestBase extends AbstractTestNGCucumberTests {
     }
 
 
-    @AfterSuite
-    public void stopDriver(){
-        driver.quit();
-    }
+//    @AfterSuite
+//    public void stopDriver(){
+//        driver.quit();
+//    }
 
         @AfterMethod
         public void takeScreenshotOnFailure (ITestResult result) throws IOException {
